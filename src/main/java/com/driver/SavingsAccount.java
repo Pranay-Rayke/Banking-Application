@@ -37,7 +37,7 @@ public class SavingsAccount extends BankAccount{
         }
         else
         {
-            throw new Exception("Maximum Withdraw Limit Exceed");
+            throw new Exception("Maximum Withdraw Limit Exceeded");
         }
 
     }
@@ -46,6 +46,7 @@ public class SavingsAccount extends BankAccount{
         // Return the final amount considering that bank gives simple interest on current amount
 
         return getBalance()*(1+(rate*years)/100);  //p(1+rt)/100 -> it gives final amount
+
 
     }
 
